@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instructions Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            color: #555;
+        }
+        li {
+            margin: 10px 0;
+        }
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .back-button {
+            background-color: #6c757d;
+        }
+        .back-button:hover {
+            background-color: #5a6268;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Instructions</h1>
+        <ul>
+            <li>1. Make sure you are in good lighting.</li>
+            <li>2. Make sure your face is clearly visible.</li>
+            <li>3. If you are wearing glasses, we recommend you to remove them and take the picture.</li>
+            <li>4. Make sure you are the only person in the frame.</li>
+        </ul>
+        <div class="button-container">
+            <button class="back-button" onclick="goBack()">Back</button>
+            <button onclick="getColorAnalysis()">Get Color Analysis</button>
+        </div>
+    </div>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+
+        function getColorAnalysis() {
+            window.location.href = 'color_analysis.html'; 
+        }
+    </script>
+</body>
+</html>
