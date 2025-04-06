@@ -16,10 +16,10 @@ def load_mnist_labels(filename):
     return labels
 
 # Load training and test data
-train_images = load_mnist_images('C:/Users/kkrit/OneDrive/Desktop/Myntra/backend/train-images-idx3-ubyte')
-train_labels = load_mnist_labels('C:/Users/kkrit/OneDrive/Desktop/Myntra/backend/train-labels-idx1-ubyte')
-test_images = load_mnist_images('C:/Users/kkrit/OneDrive/Desktop/Myntra/backend/t10k-images-idx3-ubyte')
-test_labels = load_mnist_labels('C:/Users/kkrit/OneDrive/Desktop/Myntra/backend/t10k-labels-idx1-ubyte')
+train_images = load_mnist_images('backend/data/raw/train-images-idx3-ubyte')
+train_labels = load_mnist_labels('backend/data/raw/train-labels-idx1-ubyte')
+test_images = load_mnist_images('backend/data/raw/t10k-images-idx3-ubyte')
+test_labels = load_mnist_labels('backend/data/raw/t10k-labels-idx1-ubyte')
 
 # Normalize pixel values to be between 0 and 1
 train_images, test_images = train_images / 255.0, test_images / 255.0
